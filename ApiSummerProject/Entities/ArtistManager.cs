@@ -14,6 +14,12 @@ namespace Services
             return Artists.FirstOrDefault(a => a.DeezerId == deezerId);
         }
 
+        public Artist GetArtistByName(string name)
+        {
+            return Artists.FirstOrDefault(a => string.Equals(a.Name, name, StringComparison.OrdinalIgnoreCase));
+        }
+
+
         public void Add(Artist artist)
         {
             if (artist == null)

@@ -31,3 +31,37 @@
 \\Mac\Home\Documents\Visual studio project\api-summer-project-diiage\ApiSummerProject\ApiSummerProject\obj\Debug\net8.0\ApiSummerProject.pdb
 \\Mac\Home\Documents\Visual studio project\api-summer-project-diiage\ApiSummerProject\ApiSummerProject\obj\Debug\net8.0\ApiSummerProject.genruntimeconfig.cache
 \\Mac\Home\Documents\Visual studio project\api-summer-project-diiage\ApiSummerProject\ApiSummerProject\obj\Debug\net8.0\ref\ApiSummerProject.dll
+\\Mac\Home\Documents\GitHub\api-deezer\ApiSummerProject\bin\Debug\net8.0\appsettings.Development.json
+\\Mac\Home\Documents\GitHub\api-deezer\ApiSummerProject\bin\Debug\net8.0\appsettings.json
+\\Mac\Home\Documents\GitHub\api-deezer\ApiSummerProject\bin\Debug\net8.0\ApiSummerProject.exe
+\\Mac\Home\Documents\GitHub\api-deezer\ApiSummerProject\bin\Debug\net8.0\ApiSummerProject.deps.json
+\\Mac\Home\Documents\GitHub\api-deezer\ApiSummerProject\bin\Debug\net8.0\ApiSummerProject.runtimeconfig.json
+\\Mac\Home\Documents\GitHub\api-deezer\ApiSummerProject\bin\Debug\net8.0\ApiSummerProject.dll
+\\Mac\Home\Documents\GitHub\api-deezer\ApiSummerProject\bin\Debug\net8.0\ApiSummerProject.pdb
+\\Mac\Home\Documents\GitHub\api-deezer\ApiSummerProject\bin\Debug\net8.0\Microsoft.OpenApi.dll
+\\Mac\Home\Documents\GitHub\api-deezer\ApiSummerProject\bin\Debug\net8.0\Newtonsoft.Json.dll
+\\Mac\Home\Documents\GitHub\api-deezer\ApiSummerProject\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+\\Mac\Home\Documents\GitHub\api-deezer\ApiSummerProject\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+\\Mac\Home\Documents\GitHub\api-deezer\ApiSummerProject\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+\\Mac\Home\Documents\GitHub\api-deezer\ApiSummerProject\obj\Debug\net8.0\ApiSummerProject.csproj.AssemblyReference.cache
+\\Mac\Home\Documents\GitHub\api-deezer\ApiSummerProject\obj\Debug\net8.0\ApiSummerProject.GeneratedMSBuildEditorConfig.editorconfig
+\\Mac\Home\Documents\GitHub\api-deezer\ApiSummerProject\obj\Debug\net8.0\ApiSummerProject.AssemblyInfoInputs.cache
+\\Mac\Home\Documents\GitHub\api-deezer\ApiSummerProject\obj\Debug\net8.0\ApiSummerProject.AssemblyInfo.cs
+\\Mac\Home\Documents\GitHub\api-deezer\ApiSummerProject\obj\Debug\net8.0\ApiSummerProject.csproj.CoreCompileInputs.cache
+\\Mac\Home\Documents\GitHub\api-deezer\ApiSummerProject\obj\Debug\net8.0\ApiSummerProject.MvcApplicationPartsAssemblyInfo.cs
+\\Mac\Home\Documents\GitHub\api-deezer\ApiSummerProject\obj\Debug\net8.0\ApiSummerProject.MvcApplicationPartsAssemblyInfo.cache
+\\Mac\Home\Documents\GitHub\api-deezer\ApiSummerProject\obj\Debug\net8.0\ApiSummerProject.sourcelink.json
+\\Mac\Home\Documents\GitHub\api-deezer\ApiSummerProject\obj\Debug\net8.0\staticwebassets.build.json
+\\Mac\Home\Documents\GitHub\api-deezer\ApiSummerProject\obj\Debug\net8.0\staticwebassets.development.json
+\\Mac\Home\Documents\GitHub\api-deezer\ApiSummerProject\obj\Debug\net8.0\staticwebassets\msbuild.ApiSummerProject.Microsoft.AspNetCore.StaticWebAssets.props
+\\Mac\Home\Documents\GitHub\api-deezer\ApiSummerProject\obj\Debug\net8.0\staticwebassets\msbuild.build.ApiSummerProject.props
+\\Mac\Home\Documents\GitHub\api-deezer\ApiSummerProject\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ApiSummerProject.props
+\\Mac\Home\Documents\GitHub\api-deezer\ApiSummerProject\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ApiSummerProject.props
+\\Mac\Home\Documents\GitHub\api-deezer\ApiSummerProject\obj\Debug\net8.0\staticwebassets.pack.json
+\\Mac\Home\Documents\GitHub\api-deezer\ApiSummerProject\obj\Debug\net8.0\scopedcss\bundle\ApiSummerProject.styles.css
+\\Mac\Home\Documents\GitHub\api-deezer\ApiSummerProject\obj\Debug\net8.0\ApiSumme.39A7923C.Up2Date
+\\Mac\Home\Documents\GitHub\api-deezer\ApiSummerProject\obj\Debug\net8.0\ApiSummerProject.dll
+\\Mac\Home\Documents\GitHub\api-deezer\ApiSummerProject\obj\Debug\net8.0\refint\ApiSummerProject.dll
+\\Mac\Home\Documents\GitHub\api-deezer\ApiSummerProject\obj\Debug\net8.0\ApiSummerProject.pdb
+\\Mac\Home\Documents\GitHub\api-deezer\ApiSummerProject\obj\Debug\net8.0\ApiSummerProject.genruntimeconfig.cache
+\\Mac\Home\Documents\GitHub\api-deezer\ApiSummerProject\obj\Debug\net8.0\ref\ApiSummerProject.dll

@@ -74,5 +74,45 @@ namespace Controllers
             return Ok(artist);
         }
 
+        [HttpGet("artist/name/{name}")]
+        public async Task<IActionResult> GetArtistByName(string name)
+        {
+            _logger.LogInformation($"Getting artist with name {name}");
+
+            var artist = _artistManager.GetArtistByName(name);
+            if (artist != null)
+            {
+                _logger.LogInformation($"Artist found in cache: {artist.Name}");
+                return Ok(artist);
+            }
+
+            artist = await _deezerService.SearchArtistByNameAsync(name);
+            if (artist == null)
+            {
+                _logger.LogWarning($"Artist with name {name} not found in Deezer");
+                return NotFound("Artist not found");
+            }
+
+            var albums = await _deezerService.GetAlbumsByArtistAsync(artist.DeezerId);
+            if (albums != null)
+            {
+                foreach (var album in albums)
+                {
+                    var tracks = await _deezerService.GetTracksByAlbumAsync(album.Id);
+                    if (tracks != null)
+                    {
+                        album.Tracks = tracks;
+                    }
+                }
+                artist.Albums = albums;
+            }
+
+            _artistManager.Add(artist);
+            _logger.LogInformation($"Artist {artist.Name} added to cache");
+
+            return Ok(artist);
+        }
+
+
     }
 }

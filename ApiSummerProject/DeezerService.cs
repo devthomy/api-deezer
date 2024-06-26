@@ -34,6 +34,34 @@ namespace Services
             };
         }
 
+        public async Task<Artist> SearchArtistByNameAsync(string name)
+        {
+            var response = await _httpClient.GetStringAsync($"https://api.deezer.com/search/artist?q={Uri.EscapeDataString(name)}");
+            var searchResponse = JsonConvert.DeserializeObject<DeezerSearchArtistResponse>(response);
+            var deezerArtist = searchResponse?.Data?.FirstOrDefault();
+
+            if (deezerArtist == null)
+                return null;
+
+            return new Artist
+            {
+                DeezerId = deezerArtist.Id,
+                Name = deezerArtist.Name,
+                PictureSmall = deezerArtist.PictureSmall,
+                PictureMedium = deezerArtist.PictureMedium,
+                PictureBig = deezerArtist.PictureBig,
+                PictureXl = deezerArtist.PictureXl,
+            };
+        }
+
+        public class DeezerSearchArtistResponse
+        {
+            public List<DeezerArtistResponse> Data { get; set; }
+        }
+
+
+
+
         public async Task<List<Album>> GetAlbumsByArtistAsync(long artistId)
         {
             var response = await _httpClient.GetStringAsync($"https://api.deezer.com/artist/{artistId}/albums");

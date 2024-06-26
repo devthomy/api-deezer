@@ -1247,11 +1247,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "\\\\Mac\\Home\\Documents\\Visual studio project\\api-summer-project-diiage\\ApiSummerProject\\ApiSummerProject\\ApiSummerProject.csproj",
+      "projectUniqueName": "\\\\Mac\\Home\\Documents\\GitHub\\api-deezer\\ApiSummerProject\\ApiSummerProject.csproj",
       "projectName": "ApiSummerProject",
-      "projectPath": "\\\\Mac\\Home\\Documents\\Visual studio project\\api-summer-project-diiage\\ApiSummerProject\\ApiSummerProject\\ApiSummerProject.csproj",
+      "projectPath": "\\\\Mac\\Home\\Documents\\GitHub\\api-deezer\\ApiSummerProject\\ApiSummerProject.csproj",
       "packagesPath": "C:\\Users\\thom\\.nuget\\packages\\",
-      "outputPath": "\\\\Mac\\Home\\Documents\\Visual studio project\\api-summer-project-diiage\\ApiSummerProject\\ApiSummerProject\\obj\\",
+      "outputPath": "\\\\Mac\\Home\\Documents\\GitHub\\api-deezer\\ApiSummerProject\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
