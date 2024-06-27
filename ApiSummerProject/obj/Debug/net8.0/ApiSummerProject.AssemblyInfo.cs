@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ApiSummerProject")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+68022a2af914a2feeae267a3424a203f24a3851d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8072b1f100a00da85e74b6444948bb4449457cd0")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApiSummerProject")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApiSummerProject")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

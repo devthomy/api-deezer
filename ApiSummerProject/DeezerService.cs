@@ -75,6 +75,69 @@ namespace Services
             var tracksResponse = JsonConvert.DeserializeObject<TracksResponse>(response);
             return tracksResponse.Data ?? new List<Track>();
         }
+
+        public async Task<Album> SearchAlbumByNameAsync(string name)
+        {
+            var response = await _httpClient.GetStringAsync($"https://api.deezer.com/search/album?q={Uri.EscapeDataString(name)}");
+            var searchResponse = JsonConvert.DeserializeObject<DeezerSearchAlbumResponse>(response);
+            var deezerAlbum = searchResponse?.Data?.FirstOrDefault();
+
+            if (deezerAlbum == null)
+                return null;
+
+            var tracksResponse = await _httpClient.GetStringAsync($"https://api.deezer.com/album/{deezerAlbum.Id}/tracks");
+            var tracks = JsonConvert.DeserializeObject<TracksResponse>(tracksResponse)?.Data ?? new List<Track>();
+
+            var artistResponse = await _httpClient.GetStringAsync($"https://api.deezer.com/artist/{deezerAlbum.Artist.Id}");
+            var deezerArtist = JsonConvert.DeserializeObject<DeezerArtistResponse>(artistResponse);
+
+            return new Album
+            {
+                Id = deezerAlbum.Id,
+                Title = deezerAlbum.Title,
+                Cover = deezerAlbum.Cover,
+                Artist = new Artist
+                {
+                    DeezerId = deezerArtist.Id,
+                    Name = deezerArtist.Name,
+                    PictureSmall = deezerArtist.PictureSmall,
+                    PictureMedium = deezerArtist.PictureMedium,
+                    PictureBig = deezerArtist.PictureBig,
+                    PictureXl = deezerArtist.PictureXl,
+                },
+                Tracks = tracks
+            };
+        }
+
+        public async Task<List<Track>> SearchTracksByNameAsync(string name)
+        {
+            var response = await _httpClient.GetStringAsync($"https://api.deezer.com/search/track?q={Uri.EscapeDataString(name)}");
+            var searchResponse = JsonConvert.DeserializeObject<DeezerSearchTrackResponse>(response);
+            return searchResponse?.Data ?? new List<Track>();
+        }
+
+        public class DeezerSearchTrackResponse
+        {
+            public List<Track> Data { get; set; }
+        }
+
+
+        public class DeezerSearchAlbumResponse
+        {
+            public List<DeezerAlbumResponse> Data { get; set; }
+        }
+
+        public class DeezerAlbumResponse
+        {
+            public long Id { get; set; }
+            public string Title { get; set; }
+            [JsonProperty("cover")]
+            public string Cover { get; set; }
+            [JsonProperty("artist")]
+            public DeezerArtistResponse Artist { get; set; }
+        }
+
+
     }
 
     public class DeezerArtistResponse

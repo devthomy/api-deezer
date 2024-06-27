@@ -23,6 +23,7 @@ namespace Controllers
             _artistManager = artistManager;
             _logger = logger;
         }
+        #region get artist
 
         [HttpGet("artist/{id}")]
         public async Task<IActionResult> GetArtist(long id)
@@ -112,6 +113,39 @@ namespace Controllers
 
             return Ok(artist);
         }
+        #endregion
+
+        [HttpGet("album/name/{name}")]
+        public async Task<IActionResult> GetAlbumByName(string name)
+        {
+            _logger.LogInformation($"Getting album with name {name}");
+
+            var album = await _deezerService.SearchAlbumByNameAsync(name);
+            if (album == null)
+            {
+                _logger.LogWarning($"Album with name {name} not found in Deezer");
+                return NotFound("Album not found");
+            }
+
+            return Ok(album);
+        }
+
+
+        [HttpGet("track/name/{name}")]
+        public async Task<IActionResult> GetTrackByName(string name)
+        {
+            _logger.LogInformation($"Getting track with name {name}");
+
+            var tracks = await _deezerService.SearchTracksByNameAsync(name);
+            if (tracks == null || tracks.Count == 0)
+            {
+                _logger.LogWarning($"Track with name {name} not found in Deezer");
+                return NotFound("Track not found");
+            }
+
+            return Ok(tracks);
+        }
+
 
 
     }
