@@ -3,6 +3,9 @@
   "WorkspaceRootPath": "\\\\Mac\\Home\\Documents\\GitHub\\api-deezer\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B79B946F-6965-420B-9DB9-EAB5FC3583C0}|ApiSummerProject\\ApiSummerProject.csproj|\\\\mac\\home\\documents\\github\\api-deezer\\apisummerproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B79B946F-6965-420B-9DB9-EAB5FC3583C0}|ApiSummerProject\\ApiSummerProject.csproj|\\\\mac\\home\\documents\\github\\api-deezer\\apisummerproject\\deezerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -24,19 +27,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DeezerService.cs",
-              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\GitHub\\api-deezer\\ApiSummerProject\\DeezerService.cs",
-              "RelativeDocumentMoniker": "ApiSummerProject\\DeezerService.cs",
-              "ToolTip": "\\\\Mac\\Home\\Documents\\GitHub\\api-deezer\\ApiSummerProject\\DeezerService.cs*",
-              "RelativeToolTip": "ApiSummerProject\\DeezerService.cs*",
-              "ViewState": "AQIAAGkAAAAAAAAAAAAwwHcAAAAJAAAA",
+              "Title": "Program.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\GitHub\\api-deezer\\ApiSummerProject\\Program.cs",
+              "RelativeDocumentMoniker": "ApiSummerProject\\Program.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\GitHub\\api-deezer\\ApiSummerProject\\Program.cs",
+              "RelativeToolTip": "ApiSummerProject\\Program.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAiwBsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T09:41:29.361Z",
+              "WhenOpened": "2024-07-11T15:17:54.305Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ArtistManager.cs",
               "DocumentMoniker": "\\\\Mac\\Home\\Documents\\GitHub\\api-deezer\\ApiSummerProject\\Entities\\ArtistManager.cs",
               "RelativeDocumentMoniker": "ApiSummerProject\\Entities\\ArtistManager.cs",
@@ -44,20 +47,32 @@
               "RelativeToolTip": "ApiSummerProject\\Entities\\ArtistManager.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T09:40:18.714Z",
+              "WhenOpened": "2024-06-26T09:40:18.714Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DeezerController.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\GitHub\\api-deezer\\ApiSummerProject\\Controllers\\DeezerController.cs",
+              "RelativeDocumentMoniker": "ApiSummerProject\\Controllers\\DeezerController.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\GitHub\\api-deezer\\ApiSummerProject\\Controllers\\DeezerController.cs",
+              "RelativeToolTip": "ApiSummerProject\\Controllers\\DeezerController.cs",
+              "ViewState": "AQIAAHQAAAAAAAAAAADwv5gAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T09:35:22.991Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "DeezerController.cs",
-              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\GitHub\\api-deezer\\ApiSummerProject\\Controllers\\DeezerController.cs",
-              "RelativeDocumentMoniker": "ApiSummerProject\\Controllers\\DeezerController.cs",
-              "ToolTip": "\\\\Mac\\Home\\Documents\\GitHub\\api-deezer\\ApiSummerProject\\Controllers\\DeezerController.cs*",
-              "RelativeToolTip": "ApiSummerProject\\Controllers\\DeezerController.cs*",
-              "ViewState": "AQIAAH4AAAAAAAAAAADwv5IAAAAJAAAA",
+              "Title": "DeezerService.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\GitHub\\api-deezer\\ApiSummerProject\\DeezerService.cs",
+              "RelativeDocumentMoniker": "ApiSummerProject\\DeezerService.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\GitHub\\api-deezer\\ApiSummerProject\\DeezerService.cs",
+              "RelativeToolTip": "ApiSummerProject\\DeezerService.cs",
+              "ViewState": "AQIAAIgAAAAAAAAAAAA9wKYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T09:35:22.991Z",
+              "WhenOpened": "2024-06-26T09:41:29.361Z",
               "EditorCaption": ""
             }
           ]

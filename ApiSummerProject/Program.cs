@@ -1,6 +1,9 @@
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 using Services;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,7 +18,7 @@ builder.Services.AddLogging();
 // Add CORS service
 builder.Services.AddCors(options =>
 {
-    options.AddDefaultPolicy(builder =>
+    options.AddPolicy("AllowAllOrigins", builder =>
     {
         builder.AllowAnyOrigin()
                .AllowAnyMethod()
@@ -25,7 +28,6 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();
@@ -33,14 +35,15 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-// Use CORS
-app.UseCors();
+app.UseRouting();
+
+// Use the CORS policy
+app.UseCors("AllowAllOrigins");
 
 app.UseAuthorization();
 
 app.MapControllers();
 
-// Configure the application to listen on all interfaces and the specified ports
 app.Urls.Add("http://*:5204");
 app.Urls.Add("https://*:7136");
 
